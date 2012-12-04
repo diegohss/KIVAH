@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91A5338E-45C4-44DD-AEBC-64F4BD7B7FAB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HavikTeste</RootNamespace>
+    <AssemblyName>HavikTeste</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="Havik" Order="1" Enabled="False">
+          <Destination Path="" />
+          <Object Type="dbFullSql">
+            <PreSource Path="" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\Havik_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.50731\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web, Version=9.0.15.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MultiLineListBox, Version=1.0.947.40946, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MultiLineListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.50731\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Administrativo.aspx" />
+    <Content Include="bin\HavikTeste.dll" />
+    <Content Include="bin\HavikTeste.pdb" />
+    <Content Include="Busca.aspx" />
+    <Content Include="Imagens projeto\barra_progresso_mapeamento.png" />
+    <Content Include="Imagens projeto\barra_progresso_oferta.png" />
+    <Content Include="Imagens projeto\barra_progresso_requisitos.png" />
+    <Content Include="Imagens projeto\botao_adicionar_campo.png" />
+    <Content Include="Imagens projeto\botao_mapeamento_ativado.png" />
+    <Content Include="Imagens projeto\botao_oferta_ativado.png" />
+    <Content Include="Imagens projeto\botao_projeto_desativado.png" />
+    <Content Include="Imagens projeto\botao_requisitos_ativado.png" />
+    <Content Include="projeto_mapeamento.aspx" />
+    <Content Include="projeto_novo.aspx" />
+    <Content Include="Imagens projeto\barra_progresso_projeto.png" />
+    <Content Include="Imagens projeto\botao_mapeamento_desativado.png" />
+    <Content Include="Imagens projeto\botao_oferta_desativado.png" />
+    <Content Include="Imagens projeto\botao_projeto_ativado.png" />
+    <Content Include="Imagens projeto\botao_proximo.png" />
+    <Content Include="Imagens projeto\botao_requisitos_desativado.png" />
+    <Content Include="Imagens projeto\botao_site_desativado.png" />
+    <Content Include="projeto_oferta.aspx" />
+    <Content Include="projeto_requisitos.aspx" />
+    <Content Include="Relatorios\Base_Comercial.aspx" />
+    <Content Include="Relatorios\Candidatos_aprovados_por_projeto.aspx" />
+    <Content Include="Relatorios\Candidatos_Aprovados_por_Projeto_Analítico.aspx" />
+    <Content Include="Cliente.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Empresa.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Relatorios\Cliente_Havik.aspx" />
+    <Content Include="Relatorios\Entrevistas_agendadas_no_periodo.aspx" />
+    <Content Include="Relatorios\Entrevistas_aprovadas_no_periodo.aspx" />
+    <Content Include="Relatorios\Entrevistas_Realizadas.aspx" />
+    <Content Include="Relatorios\Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx" />
+    <Content Include="Relatorios\Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx" />
+    <Content Include="Relatorios\Entrevistas_realizadas_periodo.aspx" />
+    <Content Include="Relatorios\Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx" />
+    <Content Include="Financeiro.aspx" />
+    <Content Include="JS\Mascara.js" />
+    <Content Include="LoginUsuario.aspx" />
+    <Content Include="obj\Debug\HavikTeste.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\HavikTeste.dll" />
+    <Content Include="obj\Debug\HavikTeste.pdb" />
+    <Content Include="Projeto.aspx" />
+    <Content Include="PWebService.asmx" />
+    <EntityDeploy Include="HavikEDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HavikEDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Foto.ashx" />
+    <Content Include="packages.config" />
+    <None Include="Service References\ServiceReference1\HavikTeste.ServiceReference1.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\PWebService.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Relatorios\Placements.aspx" />
+    <Content Include="Relatorios\Relatorio_Contatos.aspx" />
+    <Content Include="Relatorios\Relatorio_Contatos_Analitico.aspx" />
+    <Content Include="Relatorios\Relatorio_Entrevista_Agendada_Analitico.aspx" />
+    <Content Include="Relatorios\Relatorio_Follow_Cli_Empresa.aspx" />
+    <Content Include="Relatorios\Relatorio_Henry.aspx" />
+    <Content Include="Relatorios\Relatorio_Inconsistencias.aspx" />
+    <Content Include="Relatorios\Relatorio_Status_Analitico.aspx" />
+    <Content Include="Relatorios\Vagas_Abertas.aspx" />
+    <Content Include="Relatorios\Visitas_Agendadas.aspx" />
+    <Content Include="Relatorios\Visitas_Realizadas.aspx" />
+    <Content Include="Styles\city1.jpg" />
+    <Content Include="Styles\Logo Havik preto.jpg" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Trocar_Senha.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo.aspx.cs">
+      <DependentUpon>Administrativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrativo.aspx.designer.cs">
+      <DependentUpon>Administrativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Busca.aspx.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Busca.aspx.designer.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projeto_mapeamento.aspx.cs">
+      <DependentUpon>projeto_mapeamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projeto_mapeamento.aspx.designer.cs">
+      <DependentUpon>projeto_mapeamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projeto_novo.aspx.cs">
+      <DependentUpon>projeto_novo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projeto_novo.aspx.designer.cs">
+      <DependentUpon>projeto_novo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projeto_oferta.aspx.cs">
+      <DependentUpon>projeto_oferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projeto_oferta.aspx.designer.cs">
+      <DependentUpon>projeto_oferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projeto_requisitos.aspx.cs">
+      <DependentUpon>projeto_requisitos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projeto_requisitos.aspx.designer.cs">
+      <DependentUpon>projeto_requisitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Base_Comercial.aspx.cs">
+      <DependentUpon>Base_Comercial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Base_Comercial.aspx.designer.cs">
+      <DependentUpon>Base_Comercial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Candidatos_aprovados_por_projeto.aspx.cs">
+      <DependentUpon>Candidatos_aprovados_por_projeto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Candidatos_aprovados_por_projeto.aspx.designer.cs">
+      <DependentUpon>Candidatos_aprovados_por_projeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Candidatos_Aprovados_por_Projeto_Analítico.aspx.cs">
+      <DependentUpon>Candidatos_Aprovados_por_Projeto_Analítico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Candidatos_Aprovados_por_Projeto_Analítico.aspx.designer.cs">
+      <DependentUpon>Candidatos_Aprovados_por_Projeto_Analítico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.aspx.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresa.aspx.designer.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cliente_Havik.aspx.cs">
+      <DependentUpon>Cliente_Havik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cliente_Havik.aspx.designer.cs">
+      <DependentUpon>Cliente_Havik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_agendadas_no_periodo.aspx.cs">
+      <DependentUpon>Entrevistas_agendadas_no_periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_agendadas_no_periodo.aspx.designer.cs">
+      <DependentUpon>Entrevistas_agendadas_no_periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_aprovadas_no_periodo.aspx.cs">
+      <DependentUpon>Entrevistas_aprovadas_no_periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_aprovadas_no_periodo.aspx.designer.cs">
+      <DependentUpon>Entrevistas_aprovadas_no_periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas.aspx.cs">
+      <DependentUpon>Entrevistas_Realizadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas.aspx.designer.cs">
+      <DependentUpon>Entrevistas_Realizadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx.cs">
+      <DependentUpon>Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx.designer.cs">
+      <DependentUpon>Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx.cs">
+      <DependentUpon>Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx.designer.cs">
+      <DependentUpon>Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_realizadas_periodo.aspx.cs">
+      <DependentUpon>Entrevistas_realizadas_periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevistas_realizadas_periodo.aspx.designer.cs">
+      <DependentUpon>Entrevistas_realizadas_periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx.cs">
+      <DependentUpon>Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx.designer.cs">
+      <DependentUpon>Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financeiro.aspx.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financeiro.aspx.designer.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Foto.ashx.cs">
+      <DependentUpon>Foto.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HavikEDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HavikEDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUsuario.aspx.cs">
+      <DependentUpon>LoginUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginUsuario.aspx.designer.cs">
+      <DependentUpon>LoginUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiLineListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Projeto.aspx.cs">
+      <DependentUpon>Projeto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projeto.aspx.designer.cs">
+      <DependentUpon>Projeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PWebService.asmx.cs">
+      <DependentUpon>PWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Placements.aspx.cs">
+      <DependentUpon>Placements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Placements.aspx.designer.cs">
+      <DependentUpon>Placements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Contatos.aspx.cs">
+      <DependentUpon>Relatorio_Contatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Contatos.aspx.designer.cs">
+      <DependentUpon>Relatorio_Contatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Contatos_Analitico.aspx.cs">
+      <DependentUpon>Relatorio_Contatos_Analitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Contatos_Analitico.aspx.designer.cs">
+      <DependentUpon>Relatorio_Contatos_Analitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Entrevista_Agendada_Analitico.aspx.cs">
+      <DependentUpon>Relatorio_Entrevista_Agendada_Analitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Entrevista_Agendada_Analitico.aspx.designer.cs">
+      <DependentUpon>Relatorio_Entrevista_Agendada_Analitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Follow_Cli_Empresa.aspx.cs">
+      <DependentUpon>Relatorio_Follow_Cli_Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Follow_Cli_Empresa.aspx.designer.cs">
+      <DependentUpon>Relatorio_Follow_Cli_Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Henry.aspx.cs">
+      <DependentUpon>Relatorio_Henry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Henry.aspx.designer.cs">
+      <DependentUpon>Relatorio_Henry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Inconsistencias.aspx.cs">
+      <DependentUpon>Relatorio_Inconsistencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Inconsistencias.aspx.designer.cs">
+      <DependentUpon>Relatorio_Inconsistencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Status_Analitico.aspx.cs">
+      <DependentUpon>Relatorio_Status_Analitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Relatorio_Status_Analitico.aspx.designer.cs">
+      <DependentUpon>Relatorio_Status_Analitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Vagas_Abertas.aspx.cs">
+      <DependentUpon>Vagas_Abertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Vagas_Abertas.aspx.designer.cs">
+      <DependentUpon>Vagas_Abertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Visitas_Agendadas.aspx.cs">
+      <DependentUpon>Visitas_Agendadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Visitas_Agendadas.aspx.designer.cs">
+      <DependentUpon>Visitas_Agendadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Visitas_Realizadas.aspx.cs">
+      <DependentUpon>Visitas_Realizadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Visitas_Realizadas.aspx.designer.cs">
+      <DependentUpon>Visitas_Realizadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Trocar_Senha.aspx.cs">
+      <DependentUpon>Trocar_Senha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trocar_Senha.aspx.designer.cs">
+      <DependentUpon>Trocar_Senha.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Havik 2\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MainSkin\MainSkin.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Service References\ServiceReference1\PWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

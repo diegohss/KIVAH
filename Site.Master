@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HavikTeste.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<script language="JavaScript">
+    function Verificar() {
+
+        if (window.event.keyCode == 13) {
+            event.returnValue = false;
+            event.cancel = true;
+        }
+
+    }
+</script>
+<script type = "text/javascript">
+    window.onload = function () {
+        var scrollY = parseInt('<%=Request.Form["scrollY"] %>');
+        if (!isNaN(scrollY)) {
+            window.scrollTo(0, scrollY);
+        }
+    };
+    window.onscroll = function () {
+        var scrollY = document.body.scrollTop;
+        if (scrollY == 0) {
+            if (window.pageYOffset) {
+                scrollY = window.pageYOffset;
+            }
+            else {
+                scrollY = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0;
+            }
+        }
+        if (scrollY > 0) {
+            var input = document.getElementById("scrollY");
+            if (input == null) {
+                input = document.createElement("input");
+                input.setAttribute("type", "hidden");
+                input.setAttribute("id", "scrollY");
+                input.setAttribute("name", "scrollY");
+                document.forms[0].appendChild(input);
+            }
+            input.value = scrollY;
+        }
+    };
+</script>
+<head runat="server">
+    <title></title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 701px;
+        }
+        .style3
+        {
+            width: 1417px;
+        }
+        </style>
+</head>
+<body style="background-image: url('Styles/city1.jpg');" onkeydown="Verificar()">
+    <form runat="server" onkeydown="Verificar()" defaultbutton="Button1">
+    <div class="page">
+        <div class="header">
+            <div class="title"><table class="style1">
+                    <tr>
+                        <td class="style3">
+                <img src="Styles/Logoteste.png" style="height: 50px; width: 140px" />
+                <asp:Button ID="Button1" runat="server" Text="Button"
+                                Visible="False" />
+                        &nbsp;</td>
+                        <td align="left" class="style2">
+                            <asp:Label ID="label_estado" runat="server" Text="" Font-Size="Small" 
+                                ForeColor="#FF9933"></asp:Label>
+                        </td>
+                        <td align="right" class="style2">
+                            <asp:Label ID="label_usuario" runat="server" Text="Label" Font-Size="Small" 
+                                ForeColor="#DDE4EC"></asp:Label>
+                        </td>
+                        <td>
+                <asp:Button ID="Button2" runat="server" Height="18px" Text="Sair" 
+                    BackColor="Black" BorderStyle="None" ForeColor="White" onmouseover="this.style.cursor='pointer'"
+                    onclick="Button2_Click" TabIndex="1" />
+                        </td>
+                    </tr>
+                </table>               
+            </div>
+            <div class="clear">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    IncludeStyleBlock="False" Orientation="Horizontal" BorderStyle="Solid" 
+                    BorderWidth="1px">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Empresa.aspx" Text="Empresa"/>
+                        <asp:MenuItem NavigateUrl="~/Projeto.aspx" Text="Projeto"/>
+                        <asp:MenuItem NavigateUrl="~/Cliente.aspx" Text="Cliente"/>
+                        <asp:MenuItem NavigateUrl="~/Busca.aspx" Text="Busca"/>
+                        <asp:MenuItem NavigateUrl="~/Administrativo.aspx" Text="Administrativo"/>                        
+                        <asp:MenuItem NavigateUrl="~/Financeiro.aspx" Text="Financeiro"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

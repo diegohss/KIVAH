@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\walter\Desktop\Kivah_Teste" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Default.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="Imagens projeto/botao_site_desativado.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="Imagens projeto/botao_oferta_desativado.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="bin/ru/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="Relatorios/Entrevistas_Realizadas.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Account/Web.config" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="bin/ar/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Relatorios/Candidatos_Aprovados_por_Projeto_Analítico.aspx" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="Administrativo.aspx" publishTime="11/09/2012 15:41:06" />
+    <file relUrl="Imagens projeto/botao_mapeamento_desativado.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="Styles/Logo Havik preto.jpg" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Imagens projeto/barra_progresso_mapeamento.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="Web.config" publishTime="11/01/2012 18:01:25" />
+    <file relUrl="Imagens projeto/barra_progresso_projeto.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="bin/it/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Imagens projeto/botao_requisitos_ativado.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="Busca.aspx" publishTime="11/23/2012 15:49:33" />
+    <file relUrl="Relatorios/Entrevistas_agendadas_no_periodo.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="bin/HavikTeste.pdb" publishTime="11/30/2012 12:21:59" />
+    <file relUrl="bin/pt/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="Imagens projeto/botao_adicionar_campo.png" publishTime="11/28/2012 14:09:46" />
+    <file relUrl="bin/ja/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Imagens projeto/botao_projeto_ativado.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="PWebService.asmx" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="bin/fr/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Relatorios/Relatorio_Henry.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="bin/ko/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Relatorios/Entrevistas_realizadas_periodo.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Styles/Site.css" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Relatorios/Visitas_Realizadas.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="bin/cs/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Styles/city1.jpg" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Relatorios/Entrevistas_Realizadas_e_Aprovadas_no_Periodo_por_Agendador_Analitico.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Relatorios/Entrevistas_Realizadas_no_Período_por_Entrevistador_Analítico.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="bin/tr-TR/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="App_Themes/MainSkin/MainSkin.skin" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="bin/zh-CHT/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="Imagens projeto/botao_requisitos_desativado.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="bin/HavikTeste.dll" publishTime="11/30/2012 12:22:00" />
+    <file relUrl="Relatorios/Base_Comercial.aspx" publishTime="11/23/2012 17:42:45" />
+    <file relUrl="Relatorios/Cliente_Havik.aspx" publishTime="11/01/2012 17:19:53" />
+    <file relUrl="Foto.ashx" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="Relatorios/Relatorio_Follow_Cli_Empresa.aspx" publishTime="11/12/2012 16:36:55" />
+    <file relUrl="Relatorios/Relatorio_Entrevista_Agendada_Analitico.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Relatorios/Vagas_Abertas.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Relatorios/Candidatos_aprovados_por_projeto.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Relatorios/Relatorio_Inconsistencias.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Relatorios/Entrevistas_aprovadas_no_periodo.aspx" publishTime="11/09/2012 15:10:20" />
+    <file relUrl="packages.config" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="bin/es/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="JS/Mascara.js" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="Site.Master" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Relatorios/Placements.aspx" publishTime="11/09/2012 14:54:54" />
+    <file relUrl="Imagens projeto/barra_progresso_requisitos.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="Relatorios/Relatorio_Contatos.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="bin/nl/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="About.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="Trocar_Senha.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Imagens projeto/botao_mapeamento_ativado.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="Projeto.aspx" publishTime="11/09/2012 17:35:23" />
+    <file relUrl="Imagens projeto/botao_oferta_ativado.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="bin/zh-CHS/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:40" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="Account/Register.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="Empresa.aspx" publishTime="11/09/2012 17:24:44" />
+    <file relUrl="bin/de/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="LoginUsuario.aspx" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="bin/hi/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="bin/SanitizerProviders.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Relatorios/Relatorio_Status_Analitico.aspx" publishTime="10/23/2012 11:55:38" />
+    <file relUrl="Imagens projeto/botao_projeto_desativado.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="projeto_mapeamento.aspx" publishTime="11/30/2012 12:14:36" />
+    <file relUrl="Relatorios/Visitas_Agendadas.aspx" publishTime="11/01/2012 17:50:59" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Cliente.aspx" publishTime="11/09/2012 17:30:59" />
+    <file relUrl="Account/Login.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="bin/he/AjaxControlToolkit.resources.dll" publishTime="10/23/2012 11:55:39" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="10/23/2012 11:55:35" />
+    <file relUrl="projeto_oferta.aspx" publishTime="11/30/2012 12:14:36" />
+    <file relUrl="Relatorios/Relatorio_Contatos_Analitico.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="Relatorios/Entrevista_Realizada_No_Periodo_Por_Agendador_Analitico.aspx" publishTime="10/23/2012 11:55:37" />
+    <file relUrl="projeto_novo.aspx" publishTime="11/30/2012 12:21:53" />
+    <file relUrl="Imagens projeto/barra_progresso_oferta.png" publishTime="11/28/2012 10:37:30" />
+    <file relUrl="Imagens projeto/botao_proximo.png" publishTime="10/25/2012 14:22:35" />
+    <file relUrl="Global.asax" publishTime="10/23/2012 11:55:36" />
+    <file relUrl="projeto_requisitos.aspx" publishTime="11/29/2012 16:12:38" />
+    <file relUrl="Financeiro.aspx" publishTime="11/09/2012 17:34:48" />
+  </publishProfile>
+</publishData>
